@@ -10,11 +10,19 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(bottom: 50),
-          child: Text(
-            context.localization.appName,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CircularProgressIndicator(
+              color: AppColors.primaryColor,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: Text(
+                context.localization.appName,
+              ),
+            ),
+          ],
         ),
       ),
     );

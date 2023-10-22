@@ -1,3 +1,4 @@
+import 'package:du_money_logger/presentation/auth/login_page.dart';
 import 'package:du_money_logger/presentation/main/main_page.dart';
 import 'package:du_money_logger/splash_screen.dart';
 import 'package:du_money_logger/utils/app_theme.dart';
@@ -6,9 +7,11 @@ import 'package:du_money_logger/utils/route/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+void main() async {
   setupLocators();
+  await ScreenUtil.ensureScreenSize();
   runApp(const MyApp());
 }
 
@@ -47,7 +50,7 @@ class MyApp extends StatelessWidget {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const SplashScreen();
               } else {
-                return const MainPage();
+                return const LoginPage();
               }
             }));
   }
