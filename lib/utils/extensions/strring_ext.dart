@@ -39,4 +39,8 @@ extension StringExt on String {
     // TODO: impl later
     return true;
   }
+
+  String multiply(int times) {
+    return List<String>.filled(times, this).join();
+  }
 }

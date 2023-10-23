@@ -1,4 +1,13 @@
 {
-    "appName": "DuMoneyLogger",
-    "pageNotFound": "Page not found"
+    "appName": "NeyuhKa",
+    "pageNotFound": "Page not found",
+    "email": "Email",
+    "enterYourEmail": "Enter your email",
+    "password": "Password",
+    "login": "Login",
+    "forgotPassword": "Forgot password?",
+    "createAccount": "Create account",
+    "signInWithGoogle": "Sign in with Google",
+    "signInWithFacebook": "Sign in with Facebook",
+    "signInWithApple": "Sign in with Apple"
 }

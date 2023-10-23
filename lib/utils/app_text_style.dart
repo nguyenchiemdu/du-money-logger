@@ -2,6 +2,16 @@ import 'package:du_money_logger/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
+  static const logoTextStyleWhite = TextStyle(
+      fontSize: 64,
+      fontFamily: 'Blenda Script',
+      fontWeight: FontWeight.w400,
+      color: AppColors.whiteColor);
+  static const logoTextStylePrimary = TextStyle(
+      fontSize: 48,
+      fontFamily: 'Blenda Script',
+      fontWeight: FontWeight.w400,
+      color: AppColors.primaryColor);
   static const textStyleBlackBold = TextStyle(
       color: AppColors.textBlack, fontSize: 22, fontWeight: FontWeight.w700);
   static const textStylePrimaryBold = TextStyle(
@@ -24,7 +34,9 @@ class AppTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
-  static const textStyleBoldRegular = TextStyle(
+  static const textStylePrimaryRegular12 = TextStyle(
+      color: AppColors.primaryColor, fontSize: 14, fontWeight: FontWeight.w400);
+  static const textStylePrimaryRegular = TextStyle(
       color: AppColors.primaryColor, fontSize: 14, fontWeight: FontWeight.w400);
   static const textStyleBoldBold12 = TextStyle(
       color: AppColors.colorSelectedIndicator,
@@ -44,6 +56,8 @@ class AppTextStyles {
       color: AppColors.textGrayDark, fontSize: 16, fontWeight: FontWeight.w700);
   static const textStyleGrayDarkRegularBold14 = TextStyle(
       color: AppColors.textGrayDark, fontSize: 14, fontWeight: FontWeight.w700);
+  static const textStyleBlackRegular = TextStyle(
+      color: AppColors.textBlack, fontSize: 14, fontWeight: FontWeight.w400);
   static const textStyleWhite14 = TextStyle(
       color: AppColors.whiteColor, fontSize: 14, fontWeight: FontWeight.w400);
   static const textStyleWhiteBolds14 = TextStyle(

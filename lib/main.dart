@@ -1,5 +1,4 @@
 import 'package:du_money_logger/presentation/auth/login_page.dart';
-import 'package:du_money_logger/presentation/main/main_page.dart';
 import 'package:du_money_logger/splash_screen.dart';
 import 'package:du_money_logger/utils/app_theme.dart';
 import 'package:du_money_logger/utils/locator.dart';
@@ -22,6 +21,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: (RouteSettings settings) => settings.generateRoute,
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
             //     await context.read<UserManager>().getUserInfor();
             //   }(),
             // ]),
-            future: Future.delayed(const Duration(seconds: 2)),
+            future: Future.delayed(const Duration(seconds: 1)),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const SplashScreen();
