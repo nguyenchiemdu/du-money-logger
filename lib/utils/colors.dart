@@ -17,4 +17,6 @@ class AppColors {
   static const textBlack = Color(0xFF212121);
   static const textGrayDark = Color(0xFF616161);
   static const whiteColor = Colors.white;
+  static const grayColor = Color(0xFFB6B6B6);
+  static const colorBorderInput = Color(0xFFE0E0E0);
 }

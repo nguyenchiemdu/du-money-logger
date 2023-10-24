@@ -1,3 +1,4 @@
+import 'package:du_money_logger/utils/app_text_style.dart';
 import 'package:du_money_logger/utils/colors.dart';
 import 'package:du_money_logger/utils/extensions/context_ext.dart';
 import 'package:flutter/material.dart';
@@ -8,13 +9,22 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: AppColors.primaryColor,
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(bottom: 50),
-          child: Text(
-            context.localization.appName,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CircularProgressIndicator(
+              color: AppColors.primaryColor,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: Text(
+                context.localization.appName,
+                style: AppTextStyles.logoTextStyleWhite,
+              ),
+            ),
+          ],
         ),
       ),
     );
